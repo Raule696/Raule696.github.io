@@ -1,0 +1,71 @@
+* {
+    font-family: "Roboto Thin", sans-serif;
+    color: black;
+}
+
+body {
+    background: mintcream;
+}
+
+
+#navbarMenu {
+    background: transparent;
+}
+
+#nav {
+    background: lightseagreen;
+}
+
+
+#btnProductos {
+    color: whitesmoke;
+}
+
+#btnProductos:hover {
+    color: black;
+}
+
+#btnProductos:active {
+    color: black;
+}
+
+#btnPrincipal{
+    color: whitesmoke;
+}
+
+#btnPrincipal:hover {
+    color: black;
+}
+
+#btnServicios {
+    color: whitesmoke;
+}
+
+#btnServicios:hover{
+    color: black;
+}
+
+#btnLogin{
+    color: whitesmoke;
+}
+
+#btnLogin:hover{
+    color: black;
+}
+
+#btnLogin:active{
+    color: black;
+}
+
+
+#btnRegistro{
+    color: whitesmoke;
+}
+
+#btnRegistro:hover{
+    color: black;
+}
+
+#btnRegistro:active{
+    color: black;
+}
