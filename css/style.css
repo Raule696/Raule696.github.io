@@ -69,3 +69,8 @@ body {
 #btnRegistro:active{
     color: black;
 }
+
+.card-img-top{
+    height: 300px !important;
+    max-width: 300px !important;
+}
