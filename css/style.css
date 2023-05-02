@@ -82,10 +82,6 @@ body {
     color: black;
 }
 
-.card-img-top{
-    height: 300px !important;
-    max-width: 300px !important;
-}
 .form {
     background-color: white;
     padding: 3.125em;
