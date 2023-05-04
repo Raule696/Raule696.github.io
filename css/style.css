@@ -211,3 +211,7 @@ body {
     color: red;
     font-weight: bold;
 }
+
+.user-image {
+    max-width: 200px;
+}

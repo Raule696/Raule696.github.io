@@ -47,24 +47,28 @@
         </div>
       </nav>
 </header>  
-     
-    <div class="container mt-5">
+
+  <!-- contenido pagina principal    -->
+  <main role="main">
+    <div class="container">
         <h2 class="mb-4">Registro de usuarios</h2>
         <p></p>
         <form action="" method="post" id="formulario-registro" name="formulario-registro">
-            <div class="mb-3">
+          <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
                 <label for="name" class="form-label">Nombres</label>
                 <input type="text" class="form-control" id="nombres" name="nombres">
             </div>
-            <div class="mb-3">
+            <div class="col-sm-12 col-md-6">
               <label for="name" class="form-label">Apellidos</label>
               <input type="text" class="form-control" id="apellidos" name="apellidos">
             </div>
-            <div class="mb-3">
+            <div class="col-sm-12 col-md-6">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="correo" name="correo">
             </div>
-            <div class="mb-3">
+            <div class="col-sm-12 col-md-6">
               <label for="name" class="form-label">Dirección</label>
               <textarea class="form-control" id="direccion" name="direccion" rows="3"></textarea>
             </div>
@@ -76,18 +80,46 @@
               </label>
             </div>
             <br>
-            <div class="mb-3">
+            <div class="col-sm-12 col-md-6">
                 <label for="password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
-            <div class="mb-3">
+            <div class="col-sm-12 col-md-6">
                 <label for="confirm-password" class="form-label">Confirmar contraseña</label>
                 <input type="password" class="form-control" id="password2" name="password2">
             </div>
+            <div class="col-sm-12 col-md-5">
+              <table>
+                <tr>
+                  <td>
+                    <img src="img/puma.jpg" alt="" class="user-image">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="file" class="form-control">
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+          
+            <p>
+
+            </p>
+            <p>
+
+            </p>
 
             <button type="submit" class="btn btn-primary">Registrar</button>
         </form>
+      </div>
     </div>
+    </div>
+  </main>  
+    <p>
+      
+    </p>
       <!--Aqui se encuentra el pie de pagina-->
       <footer id="footer">
         <div class="container text-center">
