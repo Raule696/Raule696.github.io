@@ -18,7 +18,7 @@
     <script src="js/acciones.js"></script>
 </head>
 
-<body style="background: rgba(158, 160, 159, 0.439);"> 
+<body style="background: rgba(158, 160, 159, 0.439)"> 
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -58,7 +58,118 @@
     </header>
 
 <div style="text-align: center"> 
-    <h1>Nuestros Productos</h1>
+    <h1 class="registarse">Mantenedor de Bodega </h1>
+    <!-- formulario de cliente -->
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="container-fluid">
+            <!-- todos los datos del cliente -->
+            <div class="row">
+                <!-- datos del cliente -->
+                <div class="col-sm-12 col-md-6" id="datos">
+
+
+                    <div class = "mb-3">
+                        <label for="nombre" class="form-label">Categoria</label>
+                        <select class="form-select" aria-label="Default select example">
+                        <option selected>seleccione categoria</option>
+                        <option value="1">perros</option>
+                        <option value="2">gatos</option>
+                        </select>
+                    </div>
+                    <div class = "mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <select class="form-select" aria-label="Default select example">
+                        <option selected>selecione opciones</option>
+                        <option value="1">Alimento perro adulto Master Dog carne 15 Kg</option>
+                        <option value="2">Alimento Cachorro Leche, 15 Kg</option>
+                        <option value="3">Alimento Perro Adulto Razas Pequeñas Carne Bolsa, 8 Kg</option>
+                        <option value="4">Alimento Seco Gato Adulto Sabor Salmón, 3 Kg</option>
+                        <option value="5">Arena Sanitaria Master Cat 4 Kg</option>
+                        <option value="6">Alimento gato 8 kg Premium salmón Master Cat</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">cantidad</label>
+                        <input type="text" placeholder="" class="form-control"id="apellidos">
+                    </div>
+                                            
+                    <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                        Nuevo 
+                    </button>
+                    <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                        agregar
+                    </button>
+                                            
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;                               
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <br>
+                    <br>
+
+                    <table class="table-table-hover">
+                        <thead>
+                            <th scope="col"></th>
+                            <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">ID &nbsp;</th>
+                            <th scope="col" class="text-end">Categoria</th>
+                            <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Nombre &nbsp;</th>                                
+                            <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Estado &nbsp;</th>
+                            <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Opciones &nbsp;</th>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">20</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">saco  master dog</td>                                      
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">vendido</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"><a href="">eliminar</a></td>                                                                      
+                            </tr>
+                            <tr>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">21</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">gato</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">saco  master cat</td>                                      
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">bodega</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"><a href="">eliminar</a></td>                                                                      
+                            </tr>
+                            <tr>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">22</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">saco  master dog</td>                                      
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">vendido</td>
+                                <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"><a href="">eliminar</a></td>                                                                      
+                            </tr>
+                                                                                        
+                        </tbody>
+                        <tfoot>
+                         
+
+                        </tfoot>
+
+                    </table>
+
+                </div>
+
+                <!-- foto cliente -->
+                <div class="col-sm-12 col-md-4 text-center" id="foto">
+
+                    <img src="img/PET.png" class="imagen">
+                    <br><br>
+                    <div class="mb-3">
+                        <input class="form-control" type="file" id="file">
+                    </div>
+
+                </div>
+            </div>                
+        </div>
+    </form>
 </div>
 
    

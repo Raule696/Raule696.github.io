@@ -29,7 +29,7 @@
                     <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current href="acerca.html">Nosotros</a>
+                    <a class="nav-link" aria-current href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-current href="registro.html">Registrarme</a>
@@ -57,20 +57,19 @@
                 <input type="email" placeholder="Usuario" class="form--input">
                 <input type="password" placeholder="Contraseña" class="form--input">
 
-                <div class="form--marketing">
-                    <input id="okayToEmail" type="checkbox">
-                    <label for="okayToEmail" class="checkbox">
-                        Recibir ofertas por Email
-                    </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="subscripcion" name="subscripcion" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Recibir ofertas por Email
+                  </label>
+
                 </div>
-                <button class="button" onclick="location.href='/apps/usuarios/index.html'">
-                    Iniciar
+                <button class="button">Iniciar 
+                    <a href=""></a>
                 </button>
 
                 <div sytle="margin-top= 100px">
-
-                    <a href="/apps/usuarios/formulario.html">Recuperar contraseña</a>
-
+                    <a href="registro.html">Recuperar contraseña</a>
                 </div>
 
             </form>
