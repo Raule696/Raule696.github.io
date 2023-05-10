@@ -1,10 +1,113 @@
-* {
-    font-family: "Roboto Thin", sans-serif;
-    color: black;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monserrat;
+    height: 100vh;
 }
 
-body {
-    background: mintcream;
+.center h1{
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.center form{
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #757272;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: 2px;
+    background: 2px;
+    outline: none;
+    transition: .5s;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #636363;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    width: 0%
+    height 2px;
+    background: #196ea6;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #36a6f0;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    text-align: center;
+    margin: -5px 0 20px 5px;
+    color: #888484;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ece8e8;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #196ea6;
+    transition: .5s;
+}
+
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #bfa7a7;
+}
+
+.signup_link a{
+    color: #196ea6;
+    text-decoration: none;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
 }
 
 .logo{
@@ -82,62 +185,6 @@ body {
     color: black;
 }
 
-.form {
-    background-color: white;
-    padding: 3.125em;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
-}
-
-.signup {
-    color: rgb(77, 75, 75);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    font-weight: bold;
-    font-size: x-large;
-    justify-content: center;
-    margin-bottom: 0.5em;
-    border-color: #39bda7;
-}
-
-.form--input {
-    width: 100%;
-    margin-bottom: 1.25em;
-    height: 25px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    padding: 0.8em;
-    font-family: 'Inter', sans-serif;
-    outline: none;
-}
-
-.form--input:focus {
-    border: 1px solid #39bda7;
-    outline: none;
-}
-
-.form--marketing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    margin-bottom: 1.25em;
-    align-items: center;
-}
-
-.form--marketing > input {
-    margin-right: 0.625em;
-}
-
-.form--marketing > label {
-    color: grey;
-}
-
 .checkbox, input[type="checkbox"] {
     accent-color: #39bda7;
 }
@@ -147,66 +194,6 @@ body {
     font-size: 16px;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 25px;
-    border: 1px solid #4f4f4f;
-    border-radius: 4px;
-    transition: all 0.2s ease-in;
-    position: relative;
-    overflow: hidden;
-    font-size: 19px;
-    color: black;
-    z-index: 1;
-}
-
-.button:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.25);
-    top: 100%;
-    width: 140%;
-    height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
-
-.button:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background-color: #39bda7;
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
-
-.button:hover {
-    color: #ffffff;
-    border: 1px solid #39bda7;
-}
-
-.button:hover:before {
-    top: -35%;
-    background-color: #39bda7;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.button:hover:after {
-    top: -45%;
-    background-color: #39bda7;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
 .error {
     color: red;
     font-weight: bold;
@@ -214,4 +201,8 @@ body {
 
 .user-image {
     max-width: 200px;
+}
+
+.navbar{
+   width: 100%;
 }
