@@ -70,24 +70,20 @@
             <!-- datos del cliente -->
             <div class="col-sm-12 col-md-6" id="datos">
                 <div class="mb-3">
-                    <label for="categoria" class="form-label">id</label>
+                    <label for="categoria" class="form-label">Id</label>
                     <input type="text" placeholder="ingrese su id" class="form-control"
                         id="nombres">
                 </div>
 
-                 <p>tipos de usuario</p>  
+                 <p>tipos de usuario</p>
                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Administrador
-                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Cliente</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Cliente
-                    </label>
-                  </div>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">Administrador</label>
+                </div>  
                   <div class="mb-3">
                     <label for="rut" class="form-label">RUT</label>
                     <input required type="text" placeholder="Ej 10123123-K" class="form-control" id="rut"
@@ -125,8 +121,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
+                    <button type=" button" href="#" class="btn btn-primary btn-sm">Generar contraseña</button>
                 </div>                   
                  
                 <button typ=" button" href="#" class="btn btn-primary btn-sm">
@@ -138,14 +135,25 @@
                 <button typ=" button" href="#" class="btn btn-primary btn-sm">
                     Eliminar
                 </button>
+                <p></p>
+                <div class="row justify-content-end" id="foto">
+                    <img src="img/user.png" class="imagen">
+                    <br><br>
+                    <div class="mb-3">
+                        <input class="form-control" type="file" id="file">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</form>
 <p></p>
-<p></p>
-<p></p>
+            <div>
                 <table class="table table-hover">
                     <thead>
                         <th scope="col"></th>
                         <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">ID &nbsp;</th>
-                        <th scope="col" class="text-end">tipo usu </th>
+                        <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Tipo usuario</th>
                         <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Rut &nbsp;&nbsp;</th>
                         <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Nombre &nbsp;</th>
                         <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">apellido &nbsp;</th>
@@ -158,33 +166,33 @@
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">34</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">cliente</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">9.586165-1</td>                                      
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">9.586.165-1</td>                                      
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Juan</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perez</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">jperez@gmail.com &nbsp;</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">paris 420</td>
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Paris 420</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">si</td>
                         </tr>
                         <tr>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">35</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">cliente</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">3.586165-1 </td>                                      
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">13.586.165-1 </td>                                      
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">juana</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Lopez</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">jLopez@gmail.com &nbsp;</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">paris 420</td>
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Aconcagua 920</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">si</td>
                         </tr>  
                         <tr>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">37</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">admin</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">5.586165-1</td>                                      
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">18.586.165-1</td>                                      
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">felipe</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">paz</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">fpaz@gmail.com &nbsp;</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">paris 420</td>
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Los Vilos 4320</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">no</td>
                         </tr>
                                                    
@@ -195,22 +203,7 @@
                     </tfoot>
 
                 </table>
-
             </div>
-
-            <!-- foto cliente -->
-            <div class="col-sm-12 col-md-4 text-center" id="foto">
-
-                <img src="img/user.png" class="imagen">
-                <br><br>
-                <div class="mb-3">
-                    <input class="form-control" type="file" id="file">
-                </div>
-
-            </div>
-        </div>                
-    </div>
-</form>
    
 
     <!--Aqui se encuentra el pie de pagina-->
