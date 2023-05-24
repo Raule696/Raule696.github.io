@@ -62,34 +62,133 @@
 </div>
 <p></p>
         <!-- formulario de cliente -->
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="container-fluid">
+                <!-- todos los datos del cliente -->
+                <div class="row">
+                    <!-- datos del cliente -->
+                    <div class="col-sm-12 col-md-6" id="datos">
 
+                        <div class="mb-3">
+                            <label for="id" class="form-label">ID</label>
+                            <input type="text" class="form-control" id="id" name="id">
+                        </div>
 
-            <div style="text-align: center"> 
-                <h1 class="registarse">Mantenedor de Bodega </h1>
-                <!-- formulario de cliente -->
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="container-fluid">
-                        <!-- todos los datos del cliente -->
-                        <div class="row">
-                            <!-- datos del cliente -->
-                            <div class="col-sm-12 col-md-6" id="datos">
-                    <div class = "mb-3">
-                        <label for="nombre" class="form-label">Categoria</label>
-                        <select class="form-select" aria-label="Default select example">
-                        <option selected>seleccione categoria</option>
-                        <option value="1">perros</option>
-                        <option value="2">gatos</option>
-                        </select>
-                    </div>
+                        <div class = "mb-3">
+                            <label for="nombre" class="form-label">Categoria</label>
+                            <select class="form-select" aria-label="Default select example">
+                            <option selected>seleccione categoria</option>
+                            <option value="1">perros</option>
+                            <option value="2">gatos</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombres" name="nombres">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripcion</label>
+                            <textarea class="form-control" id="direccion" name="direccion" rows="3"></textarea>                           
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="precio" name="precio">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="desceuntoSubscriptor" class="form-label">Descuento subscriptor</label>
+                            <input type="text" class="form-control" id="descuentoSub" name="descuentoSub">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="desceuntoOferta" class="form-label">Descuento por oferta</label>
+                            <input type="text" class="form-control" id="descuentoOff" name="descuentoOff">
+                        </div>
+                    </div> 
                 </div>
-            </div>        
-        </div>
-    </div>   
+
+            <p></p>
+                
+                        <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                            Guardar 
+                        </button>
+                        <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                            Nuevo
+                        </button>
+                        <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                            Eliminar
+                        </button>
+                        
+            <p></p>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <th scope="col"></th>
+                                <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">ID &nbsp;</th>
+                                <th scope="col" class="text-end">Categoria</th>
+                                <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Nombre &nbsp;</th>
+                                <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Descripcion &nbsp;</th>
+                                <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Precio &nbsp;</th>
+                                <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%desc subccriptor &nbsp;</th>
+                                <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%desc oferta &nbsp;</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">001</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Pro Plan Purina Optiderma</td>                                      
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Alimento para perros de razas medianas y pieles sensibles.</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">$45000</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">5%</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">2%</td>
+                                </tr>
+                                <tr>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">002</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Pedigree Adulto sabor cereal</td>                                      
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Alimento para perros de razas medianas y pieles sensibles.</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">$45000</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">5%</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">2%</td>
+                                </tr>  
+                                <tr>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">003</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Bravery adulto sabor pollo</td>                                      
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Alimento para perros de razas medianas y pieles sensibles.</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">$45000</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">5%</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">2%</td>
+                                </tr>
+                                <tr>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">004</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Gato</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Pro Plan Purina adulto</td>                                      
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Alimento para gatos de razas medianas.</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">$45000</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">5%</td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">2%</td>
+                                </tr>                                                            
+                            </tbody>
+                            <tfoot>
+                             
+
+                            </tfoot>
+    
+                        </table>
+
+                    </div>
+                </div>    
+            </div>   
 
     <!--Aqui se encuentra el pie de pagina-->
     <footer id="footer">
         <div class="container text-center">
-            <button type="button" class="btn btn-sm btn-outline-secondary">
+            <button type="button" class="btn btn-outline-secondary">
                 <a href="#">Volver arriba</a>
             </button>
             <p></p>

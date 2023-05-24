@@ -184,6 +184,9 @@ input[type="submit"]:hover{
 #btnRegistro:active{
     color: black;
 }
+.imagen{
+    width: 300px;
+}
 
 .checkbox, input[type="checkbox"] {
     accent-color: #39bda7;
