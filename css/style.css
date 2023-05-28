@@ -5,23 +5,33 @@ body {
     height: 100vh;
 }
 
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background: #d8e4dc;
+    border-radius: 10px;
+}
+
 .center h1{
     text-align: center;
     padding: 0 0 10px 0;
 }
 
 .center form{
-    padding: 0 30px;
+    padding: 0 50px;
     box-sizing: border-box;
 }
 
-form .txt_field{
+form label .for{
     position: relative;
     border-bottom: 2px solid #757272;
     margin: 30px 0;
 }
 
-.txt_field input{
+label .for input{
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -29,10 +39,9 @@ form .txt_field{
     border: 2px;
     background: 2px;
     outline: none;
-    transition: .5s;
 }
 
-.txt_field label{
+label .for label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -43,7 +52,7 @@ form .txt_field{
     transition: .5s;
 }
 
-.txt_field span::before{
+label .for span::before{
     content: '';
     position: absolute;
     top: 40px;
@@ -54,14 +63,14 @@ form .txt_field{
     transition: .5s;
 }
 
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label{
+label .for input:focus ~ label,
+label .for input:valid ~ label{
     top: -5px;
     color: #36a6f0;
 }
 
-.txt_field input:focus ~ span::before,
-.txt_field input:valid ~ span::before{
+label .for input:focus ~ span::before,
+label .for input:valid ~ span::before{
     width: 100%;
 }
 
