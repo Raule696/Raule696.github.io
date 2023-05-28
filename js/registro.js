@@ -17,6 +17,10 @@ $(document).ready(function() {
           required: true,
           email: true,
         },
+        rut: {
+          required: true,
+          minlength: 9,
+        },
         direccion: {
             required: true,
         },
@@ -32,6 +36,7 @@ $(document).ready(function() {
       messages: {
         rut: {
             required: "El rut es un campo requerido",
+            rut: "Ingrese Rut válido"
         },
         nombres: {
             required: "Sus nombres es un campo requerido",
