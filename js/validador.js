@@ -37,7 +37,8 @@ $(document).ready(function() {
     rules: {
     rut: {
         required: true,
-        rutChileno: true
+        rutChileno: true,
+        minlength: 9
     },
     email: {
         required: true,
@@ -55,7 +56,8 @@ $(document).ready(function() {
     messages: {
     rut: {
         required: "El rut es un campo obligatorio",
-        rutChileno: "El formato del rut no es válido"
+        rutChileno: "El formato del rut no es válido",
+        minlength: "Deben ser números",
     },
     email: {
         required: "El email es un campo requerido",
