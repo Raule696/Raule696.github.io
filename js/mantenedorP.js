@@ -1,4 +1,4 @@
-// objeto.metodo(json)
+c// objeto.metodo(json)
 
 $(document).ready(function() {
 
