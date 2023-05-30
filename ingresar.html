@@ -10,7 +10,9 @@
   <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
   <script src="/libs/jquery/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/ingresar.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
 </head>
 <body style="background: rgba(158, 160, 159, 0.439);">
 <!-- Aqui esta el header -->
@@ -52,12 +54,11 @@
 
 <div class="center">
   <h1>Iniciar Sesión</h1>
-  <form action="" method="post" id="formulario-inicio" name="formulario-inicio">
+  <form action="" method="post" id="formulario-ingresar" name="formulario-ingresar">
     <div class="container-fluid">
-      <form id="loginForm">
         <div class="form-group">
           <label for="username">Nombre de usuario:</label>
-          <input type="text" class="form-control" id="username" name="username" required>
+          <input type="text" class="form-control" id="username" name="username">
         </div>
         <div>
           <label for="rut">Rut:</label>
@@ -68,7 +69,6 @@
           <input type="password" class="form-control" id="password" name="password" required> <br>
         </div> <br> <br><br>
         <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-      </form>
     </div>
     </form>  
   </div>

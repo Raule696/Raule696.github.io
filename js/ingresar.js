@@ -33,13 +33,14 @@ $(document).ready(function() {
     return dv === lastChar;
     }, "Por favor ingrese un RUT válido."); 
   
-  $("#formulario-registro").validate({
+  $("#formulario-ingresar").validate({
     rules: {
         username: {
           required: true,
       },
       rut: {
           required: true,
+          rutChileno: true,
       },
       password: {
         required: true,
