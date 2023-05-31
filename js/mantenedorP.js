@@ -1,4 +1,4 @@
-c// objeto.metodo(json)
+// objeto.metodo(json)
 
 $(document).ready(function() {
 
@@ -34,13 +34,13 @@ $("#formulario-mantenedorP").validate({
         required: "La descripción es un campo requerido",
       },
     precio: {
-        required: "LEl precio es un campo requerido",
+        required: "El precio es un campo requerido",
     },
     descuentoSub: {
-      required: "El descuentoSub es una campo obligatorio",
+      required: "El descuento por suscriptor es una campo requerido",
     },
     descuentoOff: {
-      required: "El descuentoOff es una campo obligatorio",
+      required: "El descuento por oferta es un campo requerido",
     },
   },
 });

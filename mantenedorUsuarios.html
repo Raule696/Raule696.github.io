@@ -15,43 +15,46 @@
     <script src="js/script.js"></script>
     <link href="/css/style.css" rel="stylesheet">
     <script src="js/acciones.js"></script>
+    <script>
+        function generarContrasena() {
+          var contrasenaGenerada = "Duoc@123"; // Contraseña específica generada
+        document.getElementById("labelContrasena").innerHTML = contrasenaGenerada;
+        }
+    </script>
 </head>
 
-<body style="background: rgba(158, 160, 159, 0.439);"> 
+<body style="background: mintcream;"> 
     <header>
         <div id="header">
     
         </div>
-      </header>
+    </header>
 
 <div style="text-align: center"> 
     <h1>Mantenedor de usuarios</h1>
 </div>
-
 <p></p>
-<p></p>
-<form class="row g-3 needs-validation" novalidate>
+<form action="" method="post" id="formulario-mantenedorU" name="formulario-mantenedorP">
     <div class="container-fluid">
         <!-- todos los datos del cliente -->
         <div class="row">
             <!-- datos del cliente -->
-            <div class="col-sm-12 col-md-6" id="datos">
+            <div class="col" id="datos">
                 <div class="mb-3">
-                    <label for="categoria" class="form-label">Id</label>
-                    <input type="text" placeholder="ingrese su id" class="form-control"
-                        id="nombres">
+                    <label for="id" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="id" name="id">
                 </div>
 
-                 <p>tipos de usuario</p>
-                 <div class="form-check">
+                <p>tipos de usuario</p>
+                <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">Cliente</label>
-                  </div>
-                  <div class="form-check">
+                </div>
+                <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                     <label class="form-check-label" for="flexRadioDefault2">Administrador</label>
                 </div>  
-                  <div class="mb-3">
+                <div class="mb-3">
                     <label for="rut" class="form-label">RUT</label>
                     <input required type="text" placeholder="Ej 10123123-K" class="form-control" id="rut"
                         aria-describedby="emailHelp">
@@ -87,12 +90,13 @@
                     </label>
                 </div>
 
-                <div class="mb-3">
+                <div class="col">
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    <button type=" button" href="#" class="btn btn-primary btn-sm">Generar contraseña</button>
+                    <input type="password" class="form-control" id="exampleInputPassword1"> <br>
+                    <label id="labelContrasena" class="form-control"></label> <br>
                 </div>                   
-                 
+                <button type="button" class="btn btn-primary" onclick="generarContrasena()">Generar Contraseña</button>
+
                 <button typ=" button" href="#" class="btn btn-primary btn-sm">
                     Guardar 
                 </button>
@@ -103,13 +107,20 @@
                     Eliminar
                 </button>
                 <p></p>
-                <div class="row justify-content-end" id="foto">
-                    <img src="img/user.png" class="imagen">
-                    <br><br>
-                    <div class="mb-3">
-                        <input class="form-control" type="file" id="file">
-                    </div>
-                </div>
+                <div class="mb-3">
+                    &nbsp;&nbsp;
+                    <table>
+                    <tr>
+                        <td>
+                        <img src="img/user.png" alt="" class="user-image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="file" class="form-control">
+                        </td>
+                    </tr>
+                    </table>
             </div>
         </div>
     </div>  
