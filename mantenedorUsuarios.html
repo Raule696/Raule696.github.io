@@ -54,56 +54,57 @@
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                     <label class="form-check-label" for="flexRadioDefault2">Administrador</label>
                 </div>  
+                <div> <br>
+                    <label for="rut">Rut</label>
+                    <input
+                    type="text"
+                    id="rut"
+                    name="rut"
+                    class="form-control"
+                    placeholder="Ej: 12345678-5"
+                    value=""
+                    />
+                </div>
                 <div class="mb-3">
-                    <label for="rut" class="form-label">RUT</label>
-                    <input required type="text" placeholder="Ej 10123123-K" class="form-control" id="rut"
-                        aria-describedby="emailHelp">
-                    <div class="invalid-feedback">
-                        El campo rut es obligatorio
+                <label for="name" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombres" name="nombres">
+            </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo">
+                <div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Dirección</label>
+                        <textarea class="form-control" id="direccion" name="direccion" rows="3"></textarea>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" placeholder="ingrese su nombre" class="form-control"
-                        id="Nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Apellidos</label>
-                    <input type="text" placeholder="ingrese su apellido" class="form-control"
-                        id="apellidos">
-                </div>
-
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo</label>
-                    <input type="email" placeholder="Escriba su correo" class="form-control" id="correo">
-                </div>
-
-                <div class="mb-3">
-                    <label for="direccion" class="form-label">Dirección</label>
-                    <textarea placeholder="Escriba su dirección" class="form-control" id="direccion"></textarea>
-                </div>
                 
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="subscripcion">
-                    <label class="form-check-label" for="exampleSubscripcion">Subscribirse a la
-                        fundación con un aporte mensual de $3000 y obtener un 5% de descuento en tus futuras compras.
-                    </label>
-                </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="subscripcion" name="subscripcion" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                        Deseo subscribirme por $3.000 mensuales y recibir un 5% de descuento en mis compras
+                        </label>
+                    </div>
 
                 <div class="col">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"> <br>
+                    <label for="password1" class="form-label">Contraseña</label>
+                    <input type="password1" class="form-control" id="password1"> <br>
                     <label id="labelContrasena" class="form-control"></label> <br>
                 </div>                   
-                <button type="button" class="btn btn-primary" onclick="generarContrasena()">Generar Contraseña</button>
+                <button type="submit" class="btn btn-primary" onclick="generarContrasena()">Generar Contraseña</button>
 
-                <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                <button typ="submit" href="#" class="btn btn-primary btn-sm">
                     Guardar 
                 </button>
-                <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                <button typ="submit" href="#" class="btn btn-primary btn-sm">
                     Nuevo
                 </button>
-                <button typ=" button" href="#" class="btn btn-primary btn-sm">
+                <button typ="submit" href="#" class="btn btn-primary btn-sm">
                     Eliminar
                 </button>
                 <p></p>
@@ -124,7 +125,7 @@
             </div>
         </div>
     </div>  
-</form>
+
 <p></p>
             <div>
                 <table class="table table-hover">
@@ -156,7 +157,7 @@
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">35</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">cliente</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">13.586.165-1 </td>                                      
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">juana</td>
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Juana</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Lopez</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">jLopez@gmail.com &nbsp;</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Aconcagua 920</td>
@@ -167,8 +168,8 @@
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">37</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">admin</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">18.586.165-1</td>                                      
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">felipe</td>
-                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">paz</td>
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Felipe</td>
+                            <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Paz</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">fpaz@gmail.com &nbsp;</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Los Vilos 4320</td>
                             <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">no</td>
