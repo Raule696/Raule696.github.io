@@ -8,20 +8,34 @@ $(document).ready(function () {
                 // Crear el codigo HTML para agegar filas a la tabla usando los campos de cada fila
                 var fila = 
                     `
-                    <div class="card">
-                        <img src="${item.image}" class="imagen">
-                        <div class="contenido_carta">          
-                            <p>
-                                ${item.price}                                                               
-                            </p>
-                            <p>
-                                ${item.title}
-                            </p>
-                                ${item.description}           
-                            </p>        
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card">
+                    <img src="${item.image}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.title}</h5>
+                        <div class="lead text-Light fw-bold">Descripción</div>
+                        <p class="card-description">${item.description}</p>
+                        <b>Stock 5 unidades</b>                        
+                    <div class="lead table-danger" >
+                        <span class="sale-offer-price fw-bold">
+                            $${item.price}
+                        </span>
+                        <p></p>
+                            <div class="d-flex justify-content-between aligin-items-center" >
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al Carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div> 
-                    `;
+                    </div>
+                </div>
+            </div>
+                `;
                 
                 fila += '</tr>';
 

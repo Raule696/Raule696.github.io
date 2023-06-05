@@ -40,15 +40,15 @@
             <div class="col" id="datos">
                 <div class="mb-3">
                     <label for="id" class="form-label">Id</label>
-                    <input type="text" class="form-control" id="id" name="id">
+                    <input type="number" class="form-control" id="id" name="id">
                 </div>
                 <p>Tipos de usuario</p>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                     <label class="form-check-label" for="flexRadioDefault1">Cliente</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                     <label class="form-check-label" for="flexRadioDefault2">Administrador</label>
                 </div>  
                 <div> <br>
@@ -85,8 +85,8 @@
                         </label>
                 </div>
                 <div class="mb-3">
-                    <label for="password1" class="form-label">Contraseña</label>
-                    <input type="password1" class="form-control" id="password1"> <br>
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password"> <br>
                     <label id="labelContrasena" class="form-control"></label> <br>
                     <button type="submit" class="btn btn-primary" onclick="generarContrasena()">Generar Contraseña</button>
                 </div>                   

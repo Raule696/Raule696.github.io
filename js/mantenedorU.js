@@ -38,6 +38,8 @@ $("#formulario-mantenedorU").validate({
         },
         rut: {
             required: true,
+            rutChileno: true,
+            minlength: 9
         },
         nombres: {
             required: true,
@@ -54,6 +56,7 @@ $("#formulario-mantenedorU").validate({
         },
         password:{
             required:true,
+            minlength: 5,
         }
       }, // --> Fin de reglas
     messages: {
